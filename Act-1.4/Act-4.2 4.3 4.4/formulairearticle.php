@@ -2,6 +2,23 @@
 
 include('db_connection.php');
 
+// //write query for all articles
+// $sql = 'SELECT * from articles';
+
+// //make query and get result
+// $result= mysqli_query($conn,$sql);
+
+// //fetch the resulting rows as an array
+// $articles = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+// //free result from memory
+// mysqli_free_result($result);
+
+// //close connection
+// mysqli_close($conn);
+
+// print_r($articles);
+
 ?>
 
 

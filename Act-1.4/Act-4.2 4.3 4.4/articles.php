@@ -9,6 +9,13 @@ $titre ="";
 $texte="";
 $auteur="";
 $date_publication=date(('Y-m-d'));
+// ,strtotime($_POST['date_publication'])
+// $titre = isset($_POST['titre']) ? $_POST['titre'] : '';
+// $texte = isset($_POST['texte']) ? $_POST['texte'] : '';
+// $auteur = isset($_POST['auteur']) ? $_POST['auteur'] : '';
+// $month = date('n');
+// $year = date('Y');
+// $day = date('D');
 
  
 if (isset($_POST['submit'])){
@@ -37,12 +44,13 @@ else
 //write query for all articles
 $sql = 'SELECT * from articles';
 
+
 //make query and get result
 $result= mysqli_query($conn,$sql);
 
+
 //fetch the resulting rows as an array
 $articles = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
 
 //free result from memory
 mysqli_free_result($result);
